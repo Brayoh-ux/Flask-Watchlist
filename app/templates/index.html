@@ -18,20 +18,29 @@
         
         </div>
         <!-- Popular movie -->
-        <h3> Popular Movies</h3>
-         <ul>
+       <div class="row">
+            <h3 class="text-center " style="text-transform: uppercase" style="font-weight: 900;" > Popular Movies</h3>
+            <hr>
+            <ul>
             {{ macro.displayMovieList(popular)}}
         </ul>
+       </div>
 
         <!-- Upcoming movie  -->
-        <h3> Upcoming Movies </h3>
-         <ul>
-            {{ macro.displayMovieList(upcoming)}}
-        </ul>
+        <div class="row">
+            <h3 class="text-center" style="text-transform: uppercase" style="font-weight: 900;"> Upcoming Movies </h3>
+            <hr>
+            <ul>
+                {{ macro.displayMovieList(upcoming)}}
+            </ul>
+        </div>
         <!-- Now showing movie -->
-        <h3>Now Showing</h3>
-         <ul>
-            {{ macro.displayMovieList(now_showing)}}
-        </ul>
+        <div class="row">
+            <h3 class="text-center" style="text-transform: uppercase" style="font-weight: 900;">Now Showing</h3>
+            <hr>
+            <ul>
+                {{ macro.displayMovieList(now_showing)}}
+            </ul>
+        </div>
         {% endblock%}
 
